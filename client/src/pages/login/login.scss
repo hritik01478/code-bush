@@ -1,0 +1,92 @@
+.login {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom,
+            #284b63 0%,
+            #d9d9d9 100%);
+    // overflow: hidden;
+
+    .top {
+
+        .logo {
+            padding: 20px 50px;
+            height: 40px;
+        }
+
+    }
+
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .bottom {
+
+            background-color: #555555;
+
+            form {
+                width: 300px;
+                height: 300px;
+                padding: 50px;
+                border-radius: 5px;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                background-color: var(--main-color);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                input {
+                    height: 40px;
+                    background-color: gray;
+                    border-radius: 5px;
+                    color: white;
+                    padding-left: 10px;
+                    outline: none;
+
+                    &::placeholder {
+                        color: lightgray;
+                    }
+                }
+
+                button {
+                    height: 40px;
+                    border-radius: 5px;
+                    background-color: teal;
+                    color: white;
+                    border: none;
+                    font-size: 18px;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+
+                span {
+                    color: lightgray;
+
+                    b {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .work {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 55vh;
+            left: 60vw;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

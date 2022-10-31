@@ -1,0 +1,50 @@
+@import "../../global.scss";
+
+.shortCalendar {
+  position: absolute;
+  top: 80vh;
+  right: 10vw;
+  display: flex;
+  height: 10%;
+  width: 30%; 
+  gap: 0.2%; 
+  // border-radius: 5px; 
+  // background-color: $palleteGrey;
+  justify-content: center;
+  align-items: center;
+  .past {
+    height: 100%;
+    width: 20%;
+    transition: all 0.1s ease;
+    filter: drop-shadow(0px 10px 4px #828284);
+    &:hover{
+      transform: translateY(-10%);
+      filter: drop-shadow(0px 15px 8px #454547);
+    }
+  }
+  .today {    
+    height: 100%;
+    width: 20%;
+    transform: translateY(-5%);  
+    transition: all 0.1s ease;
+    // box-shadow: 0px 5px #000000;
+    filter: drop-shadow(0px 10px 4px #4d4d4f);
+    &:hover{
+      transform: translateY(-15%);
+      filter: drop-shadow(0px 15px 8px #282829);
+    }
+  }
+  .next {
+    height: 100%;
+    width: 20%;
+    transition: all 0.1s ease;
+    filter: drop-shadow(0px 10px 4px #828284);
+    &:hover{
+      transform: translateY(-10%);
+      filter: drop-shadow(0px 15px 8px #454547);
+    }
+  }
+}
+.inactive {
+  display: none;
+}

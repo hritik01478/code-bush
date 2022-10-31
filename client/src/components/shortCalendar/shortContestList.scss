@@ -1,0 +1,18 @@
+@import '../../global.scss';
+
+.codechef{  
+  overflow: hidden;
+  background-color: $codechef;
+  height: 100%;
+  width: 15%;
+  display: block;
+}
+.inactive{
+  display: none;
+}
+.codeforces{  
+  display: block;
+  background-color: $codeforces; 
+  height: 100%;
+  width: 15%;
+}

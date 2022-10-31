@@ -1,0 +1,114 @@
+@import "../../global.scss";
+
+.dateCell {
+  width: 100%;
+  background-color: transparent;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  // @media screen and (min-width: 200px) {
+  //     display: none;
+  // }
+  .dateHeader {
+    width: 100%;    
+    color: white;
+    border-radius: 6px;
+    align-items: center;
+    text-align: center;
+  }
+  .today {
+    width: 100%;
+    background-color: #0f73b6;
+    color: white;
+    text-align: center;
+    // border: 1px solid white;
+    // @media screen and (min-width: 200px) {
+    //   background-color: $palleteBlue;
+    // }
+  }
+  .list {
+    background-color: transparent;
+    color: white;
+    position: relative;
+    .contestsul {
+      width: 100%;      
+      list-style: none;
+      padding: 0;
+      position: relative;      
+      scrollbar-width: 0;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .codechefbg{  
+        text-align: left;  
+        .contestList{
+          color: white;
+          font-size: 12px;
+          height: 14px; 
+          // display: inline-block;
+          // overflow: scroll;
+          white-space: nowrap;     
+          overflow: scroll;
+          // text-overflow: ellipsis; 
+          scrollbar-width: 0;
+          // width: 100;
+          background-color: $codechef;
+          &::-webkit-scrollbar{
+            display: none;
+          }  
+          .data{
+            width: 100%; 
+            a{
+              color: white;
+              text-decoration: none;
+            }      
+          }
+          @media (max-width: 210px){
+            display: none;
+          }
+        }
+        .inactive{
+          display: none;
+        }
+      }
+      .codeforcesbg{ 
+        text-align: left;  
+        .contestList{
+          color: white;
+          font-size: 12px;
+          height: 14px; 
+          // display: inline-block;
+          // overflow: scroll;
+          white-space: nowrap;     
+          overflow: scroll;
+          // text-overflow: ellipsis; 
+          scrollbar-width: 0;
+          // width: 100;
+          background-color: $codeforces;
+          &::-webkit-scrollbar{
+            display: none;
+          }  
+          .data{
+            width: 100%;
+            a{
+              color: white;
+              text-decoration: none;
+            }      
+          }
+          @media (max-width: 210px){
+            display: none;
+          }
+        }
+        .inactive{
+          display: none;
+        }
+      }
+      
+      
+    }
+  }
+}
+.lessOpacity {
+  opacity: 70%;
+}
